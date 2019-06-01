@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script language="javascript" type="text/javascript" src="path/to/p5.sound.js"></script>
+    <script src="p5.play.js"></script>
+    <script src="microBit.js"></script>
+    
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <script src="timeHandler.js"></script>
+    <script src="enemy.js"></script>
+    <script src="floor_plan.js"></script>
+    <script src="sketch.js"></script>
+    <script>
+      function updateMicroBit(mbit, mbit2) {
+        microBit1 = mbit;
+        console.log("update microBit")
+        microBit1.setButtonACallback(function () {
+          console.log("buttonA pressed");
+          scenes[currentScene].buttonAPressed();
+        });
+  
+        microBit1.setButtonBCallback(function () {
+          console.log("buttonB pressed");
+          scenes[currentScene].buttonBPressed();
+        });
+  
+        microBit1.onConnect(function () {
+          console.log("connected");
+        });
+  
+        microBit1.onDisconnect(function () {
+          console.log("disconnected");
+        });
+
+        microBit2 = mbit2;
+        console.log("update microBit")
+        microBit2.setButtonACallback(function () {
+          console.log("buttonA pressed");
+          scenes[currentScene].buttonAPressed();
+        });
+  
+        microBit2.setButtonBCallback(function () {
+          console.log("buttonB pressed");
+          scenes[currentScene].buttonBPressed();
+        });
+  
+        microBit2.onConnect(function () {
+          console.log("connected");
+        });
+  
+        microBit2.onDisconnect(function () {
+          console.log("disconnected");
+        });
+
+
+
+      }
+    </script>
+
+</body></html>

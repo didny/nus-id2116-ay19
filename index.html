@@ -1,2 +1,155 @@
-<head></head>
-<body>test</body>
+<!DOCTYPE html><html><head>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+
+    <script src="hammer.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    
+    <script src="p5.play.js"></script>
+    <script src="microBit.js"></script>
+
+
+    <script type="text/javascript" language="JavaScript">
+        let project,games,gameList,gameIdx,currentGame;
+        let microBitMaster, microBitMasterTwo; 
+
+        microBitMaster = new uBit();
+        microBitMasterTwo = new uBit();
+
+        function setup(){
+        createCanvas(0,0);
+        project = loadJSON("listofgames.json",loadGames)
+              
+        }
+
+
+        function searchDevice(){
+
+            if(!microBitMaster.connected) {
+              console.log("connecting the 1st microbit")
+              microBitMaster.searchDevice();
+            }
+            
+            
+          
+          console.log(currentGame)
+          document.getElementById(currentGame).contentWindow.updateMicroBit(microBitMaster); 
+          //TODO: Add 2 player game.
+          if(games[currentGame]["player"] == 2){
+            console.log("connecting the 2nd microbit")
+            if(!microBitMasterTwo.connected) microBitMasterTwo.searchDevice();
+            document.getElementById(currentGame).contentWindow.updateMicroBit(microBitMaster,microBitMasterTwo); 
+          }else{
+            document.getElementById(currentGame).contentWindow.updateMicroBit(microBitMaster,microBitMasterTwo); 
+          }
+
+        }
+        function loadGames(){
+          gameIdx = 1;
+ 
+          games = project['games']
+          //gameList = Object.keys(games);
+          gameList = ["MicroBitTest"
+                      ,"HersheyLand"
+                      ,"Skinny Deep"
+                      ,"Up Up and Away"
+                      ,"Yuta Run"
+                      ,"GudeTama"
+                      ,"EbiFurai"
+                      ,"Lunatics"
+                      ,"ID LAO"
+                      ,"Back to the Retro"]
+
+          currentGame = gameList[gameIdx];
+          console.log(project["title"]);
+          console.log(project["games"]);
+          console.log(gameList);
+          gameFrame = createDiv('<iframe id="'+games[currentGame]["title"]+'" src="'+games[currentGame]["location"]+'" frameBorder="0" scrolling="no"'+' width='+games[currentGame]["width"]+' height='+games[currentGame]["height"]+'></iframe>');
+          gameFrame.attribute("id","gameframe");
+          button = createButton('START GAME');
+          button.mousePressed(searchDevice); // attach button listener
+          title = createDiv(games[currentGame]["title"]);
+          title.attribute("id","title");
+          credit = createDiv(games[currentGame]["designer"])
+          credit.attribute("id","credit");
+          description = createDiv(games[currentGame]["description"])
+          description.attribute("id","description");
+
+
+
+        }
+
+
+        function nextGame() {
+        nextGameIdx = (++gameIdx) % gameList.length;
+        currentGame = gameList[nextGameIdx];
+        gameFrame.html('<iframe id="'+games[currentGame]["title"]+'" src="'+games[currentGame]["location"]+'" frameBorder="0" scrolling="no"'+' width='+games[currentGame]["width"]+' height='+games[currentGame]["height"]+'></iframe>');
+      
+        title.html(games[currentGame]["title"])
+        credit.html(games[currentGame]["designer"])
+        description.html(games[currentGame]["description"])
+        //document.getElementById(currentGame).contentWindow.updateMicroBit(microBitMaster,microBitMasterTwo)
+
+        ;
+
+
+
+        }
+        function prevGame() {
+        currentGame = gameList[(--gameIdx) % gameList.length];
+        gameFrame.html('<iframe id="'+games[currentGame]["title"]+'" src="'+games[currentGame]["location"]+'" frameBorder="0" scrolling="no"'+' width='+games[currentGame]["width"]+' height='+games[currentGame]["height"]+'></iframe>');
+
+     
+        title.html(games[currentGame]["title"])
+        credit.html(games[currentGame]["designer"])
+        description.html(games[currentGame]["description"])
+        //document.getElementById(currentGame).contentWindow.updateMicroBit(microBitMaster,microBitMasterTwo);
+
+      }
+
+
+      </script>
+
+      <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    
+  </head>
+  <body id="view">
+  
+      <script>
+          var myElement = document.getElementById('view');
+          var hammertime = new Hammer(myElement);
+          hammertime.on('swipeleft', function(ev) {
+            console.log(ev.type)
+            prevGame();
+          });
+          hammertime.on('swiperight', function(ev) {
+            console.log(ev.type);
+            nextGame();
+          });
+          
+        </script>
+    <span 
+      id="prevgame" 
+      onclick="prevGame();" 
+     >
+   <nobr>[PREV]</nobr></span>
+    <span 
+    id="nextgame" 
+    onclick="nextGame();" 
+    >
+ <nobr>[NEXT]</nobr>
+ </span>
+ 
+
+
+
+
+
+  
+  
+
+
+
+</body></html>

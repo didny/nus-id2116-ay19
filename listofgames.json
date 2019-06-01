@@ -1,0 +1,244 @@
+{
+    "name": "ID2116 AY2018/2019",
+    "version": "1.0.0",
+    "games": {
+        "MicroBitTest": {
+            "id": 0,
+            "width": 400,
+            "height": 400,
+            "player": 2,
+            "title": "MicroBitTest",
+            "designer": ["DIC, Yuta Nakayama"],
+            "url": "https://designincubationcentre.com",
+            "location": "MicroBitTest",
+            "description": "Test Mode for Microbit BLE connection."
+        },
+        "HersheyLand": {
+            "id": 2,
+            "width": 400,
+            "height": 600,
+            "player": 1,
+            "title": "HersheyLand",
+            "designer": ["TAN ZHI WEI ASHLEY", "JERALDINE LOW JIA YU"],
+            "url": "https://editor.p5js.org/Ashestzw/sketches/7aJKYNbn3",
+            "location": "Hersheyland",
+            "description": "Hershey is a frenetic arcade game that’s fun-filled and delightful. It’s the perfect game to unwind fora minute over a quick match. Help ‘Hershey’, the badass huskey who accidentally broke into a chocolate factory! Help him find his way back to his owner waiting at the entrance worried sick. "
+        },
+        "Skinny Deep": {
+            "id": 8,
+            "width": 900,
+            "height": 500,
+            "player": 1,
+            "title": "Skinny Deep",
+            "designer": ["TAN ZHI RU", "GERMAINE TAN"],
+            "url": "https://editor.p5js.org/zhiru44@gmail.com/sketches/gmSmRfWcp",
+            "location": "SkinnyDeep",
+            "description": "SkinnyDeep is about a plum woman swimming in a pool filled with obstacles such as floats, slippers, swimsuits and more. The aim is to complete the race without using up all her lives. She starts off with 10lives represented by the heart shape which decreases in size with the bumping into every obstacle. Knocking into objects will cause her to sustain injuries, and the number of lives she has decreases. If there are more than 9 injuries, you lose and a game over sign will pop up. If she crosses the finishing line without sustaining too many injuries, you win."
+        },
+        "BATTLE OF THE CODES": {
+            "id": 1,
+            "width": 800,
+            "height": 500,
+            "player": 1,
+            "title": "BATTLE OF THE CODES",
+            "designer": ["FOONG HAW", "LIM SHI YUN"],
+            "url": "https://editor.p5js.org/lsy2107/present/GbjbcQm1Q",
+            "location": "BattleOfTheCode",
+            "description": "This game is a dot reaction game where utilizing your reaction speed. This is a 2-player game, where The Student uses button A and The Professor uses button B. A yellow code will travel back and forth, and you must press it right when it reaches the red code. Whoever presses first will win if they press at the right timing, but if they press at the wrong timing they will lose. This is a quick little game that can be played among your friends when you are bored, or when you need to choose someone to do a chore!"
+        },
+        "Germ Buster": {
+            "id": 3,
+            "width": 900,
+            "height": 500,
+            "player": 1,
+            "title": "Germ Buster",
+            "designer": ["JOEL LOO CHOON KIAT", "ANDY TANG WENG CHEN"],
+            "url": "https://editor.p5js.org/lsy2107/present/GbjbcQm1Q",
+            "location": "GermBuster",
+            "description": "Germ Buster is an action shooting game that revolves around the concept of germ fighting, with the player controlling a nanoship by tilting the device to fight for survival.            With a wide variety of weapons to equip such as dual gun and lasers, fight your way through an increasing level of difficulty in the gameplay.You are tasked to defend the ship and destroy the evil bacteria to stay alive as long as possible!Test out your skills or beat the high score now!"  
+        },
+        "Going Home": {
+            "id": 4,
+            "width": 900,
+            "height": 500,
+            "player": 1,
+            "title": "Going Home",
+            "designer": ["TAN YAN JING MELISSA", "NURUL SYAZWANI BTE SHAPUAN"],
+            "url": "https://editor.p5js.org/inderevery/sketches/yzMIZM11T",
+            "location": "GoingHome",
+            "description": "A mother duck has to cross a few busy roads, and collects her ducklings along the way before reaching the pond (their home). She has to avoid getting hit by the busy vehicles. The more ducklings she collects, the higher the point system. Higher point system will lead to level up. As the level gets higher, more obstacles. With each duckling she collects, earn +1 point. When she hits the vehicle, game is over. The objective of the game is to collect all 10 ducklings and go home."
+        },
+        "SAIRE": {
+            "id": 5,
+            "width": 900,
+            "height": 500,
+            "player": 1,
+            "title": "SAIRE",
+            "designer": ["LIM JING JIE", "BOH ERN CHI JERALDINE"],
+            "url": "https://editor.p5js.org/jeraldine/present/QdMgYp0Q2",
+            "location": "SAIRE",
+            "description": "Our game, titled SAIRE, stands for Space Allies in Recruitment Expedition. Beginning with one spaceship, the player must save the men who are trapped in space. These men, once saved, will be recruited to join the player to rescue the other men in space (you don’t just get saved for free!) While more spaceships make it easier to rescue more men, it also makes it easier to get hit by the incoming meteors. However, instead of just trying to avoid the meteors, each spaceship is equipped with guns that can shoot bullets out to push these meteors away."
+        },
+        "Lunatics": {
+            "id": 6,
+            "width": 900,
+            "height": 500,
+            "player": 1,
+            "title": "Lunatics",
+            "designer": ["TAN HWEE PENG", "NUR DIYANA AQILAH BINTE SALAM"],
+            "url": "https://editor.p5js.org/t-hweepeng96@hotmail.com/present/EFQoWZDmz",
+            "location": "Lunatics",
+            "description": "Lunatics in an unknown space” is a space shooter game designed for two players, Spoiled Rabbit and Smile Person. Their roles are to protect the spaceship from invaders in the surrounding by shooting them down. The spaceship is structured as a grid layout with active space that the players can move around. The spaceship has two canons located at the obit ring which the players can operate to shoot the enemies."
+        },
+        "Back to the Retro": {
+            "id": 9,
+            "width": 389,
+            "height": 600,
+            "player": 1,
+            "title": "Back to the Retro",
+            "designer": ["TAN KAH WEE", "XAVIER TEO XUAN KAI"],
+            "url": "https://editor.p5js.org/xavierteo/full/5Ym7ZreIS",
+            "location": "BackToTheRetro",
+            "description": "The game “Back To The Retro” is inspired from the movie “Back To The Future”, the objective of the game is to move the vehicle to the finishing line/portal in the shortest amount of time without colliding the barriers. The route starts from a wider path and gets narrow and narrow as the game goes. The canvas of the game is the size of the phone, allowing the player to play with their phones wherever they are and a special controller is also designed to cater to the portability for the users."
+        },
+
+
+        "Up Up and Away": {
+            "id": 10,
+            "width": 800,
+            "height": 400,
+            "player": 1,
+            "title": "Up Up and Away",
+            "designer": ["SEN FONG LING", "TAN YING"],
+            "url": "https://editor.p5js.org/yingyeahhh/sketches/2qutOAx05",
+            "location": "UpUpAway",
+            "description": "Inspired by Disney Pixar’s movie ‘Up’, steer the “airship” of a house flown by tons of helium balloons to reach the end goal of Paradise Falls.Test your pilot skills by steering the house up and down in the sky to avoid various obstacles and challenges in the sky.It will be a long journey of discovery. Cruise through on clear days, enjoy the cloudy skies and brave the stormy weather before you reach the destination.Do you have what it takes to reach the mysterious Paradise Falls ? "
+        },
+
+        "Blob": {
+            "id": 11,
+            "width": 1920,
+            "height": 1080,
+            "player": 1,
+            "title": "Blob",
+            "designer": ["CARINA LIM YU SHAN", "TAN SHIN CHIEH JEREME"],
+            "url": "https://editor.p5js.org/carinalyshan/sketches/yuFxGJnzH",
+            "location": "Blob",
+            "description": "Blob is a rare species from the Sahara Desert. Due to its unique shape, it has a hard time hiding away from predators.If you’ re not careful, Blob could become someone’ s next meal.It’ s survival of the fittest and up to you to feed Blob!"
+        },
+
+        "浇水": {
+            "id": 12,
+            "width": 1920,
+            "height": 1080,
+            "player": 1,
+            "title": "浇水",
+            "designer": ["FELICIA LEE JIA XIN", "JANNA TAN JIE NING"],
+            "url": "https://editor.p5js.org/felileecia/full/9OMIBmtlK",
+            "location": "JiaoShui",
+            "description": "Blob is a rare species from the Sahara Desert. Due to its unique shape, it has a hard time hiding away from predators.If you’ re not careful, Blob could become someone’ s next meal.It’ s survival of the fittest and up to you to feed Blob!"
+        },
+
+        "Yuta Run": {
+            "id": 13,
+            "width": 1080,
+            "height": 607.5,
+            "player": 1,
+            "title": "Yuta Run",
+            "designer": ["LIM WEI LIN WINNIE", "PANG SHI JIE"],
+            "url": "https://editor.p5js.org/limweilinwinnie/present/CYqKAfK8u",
+            "location": "YutaRun",
+            "description": "Yuta Run is a fun and intuitive game inspired by the wealth phenomena that everyone experiences every day. In life, majority of the population strives their best to attain a comfortable lifestyle that is usually achieved through working. The tokens represent wealth while the bills are denoted as unexpected events that result in potential money outflow. Hence, please help Yuta to collect a total of 10 tokens while avoiding all the bills to win the game. There will be countless retries for players to win after losing. This serves as a reminder that despite all the obstacles and mistakes in life, with hard work and perseverance, one will be able to succeed eventually."
+        },
+        "Wormies": {
+            "id": 14,
+            "width": 2080,
+            "height": 500,
+            "player": 1,
+            "title": "Wormies",
+            "designer": ["CHOOI AN RONG AARON", "LEE JIE XUAN, KEITH"],
+            "url": "https://editor.p5js.org/ar.chooi.aaron@gmail.com/full/7Wa6OoSBi",
+            "location": "Wormies",
+            "description": "Wormies is a simple and universal child tracker for parents, utilising radio signal strength as a medium. Parents are often distracted by their electronic devices. Wormies allow parents to be aware of their children's presence while using their electronic devices in a universal yet cost effective method. This concept could be further extrapolated to other contexts such as tracking livestock or in military application."
+        },
+        "ID LAO": {
+            "id": 15,
+            "width": 842,
+            "height": 595,
+            "player": 1,
+            "title": "ID LAO",
+            "designer": ["DEBORAH LOH HYUEYIN", "HUANG MU EN @ ASHLEY HUANG"],
+            "url": "https://editor.p5js.org/muenhuang@gmail.com/sketches/hcce6uphS",
+            "location": "IDLAO",
+            "description": "ID LAO is a game that is inspired by the Hai Di Lao craze that hit Singaporeans in the recent years. This game engage players with the microbit to stimulate a hotpot eating session. With every ingredient caught by the ladle, the game will recognise and display the number of food items being scooped. The game is completed when the player finishes scooping up all the ingredients in the hotpot."
+        },
+        "Color Boink": {
+            "id": 16,
+            "width": 1920,
+            "height": 1080,
+            "player": 1,
+            "title": "Color Boink",
+            "designer": ["GRACIA FEI YUE", "JONJOE FONG JUN MING"],
+            "url": "https://editor.p5js.org/muenhuang@gmail.com/sketches/hcce6uphS",
+            "location": "ColorBoink",
+            "description": "Color Boink merge transform everyone is a game dedicated to one of the fundamentals of design. It encourages the user to explore how the colors in our world and one another on the primary, secondary and tertiary level. For every task, the user moves the Color Man around to collect different pairs of colors that form the target hue required. When an answer is wrong, the Color Man must return to the center to be reset to white. As the game progresses, the entire color wheel unfolds itself to the user. "
+        },
+        "GudeTama": {
+            "id": 17,
+            "width": 920,
+            "height": 580,
+            "player": 1,
+            "title": "GudeTama",
+            "designer": ["SHERMAINE BOH SHI YING", "TENG I LING"],
+            "url": "https://editor.p5js.org/Sherling/sketches/uSPy-6xBU",
+            "location": "GudeTama",
+            "description": "Inspired by the childhood fishing magnetic game, we are creating a gudetama game where users are able to use the chopsticks to navigate by tilting the microbit towards the direction of motion and then pressing the button to grab the food, all within a given time.The different ingredients signify different points where the result will be shown after the time is up."
+        },
+        "EbiFurai": {
+            "id": 18,
+            "width": 417,
+            "height": 556,
+            "player": 1,
+            "title": "EbiFurai",
+            "designer": ["CHAN LI XIN CYNTHIA", "TAN WEI JING"],
+            "url": "https://editor.p5js.org/meoweijing/present/0bnWBQMQv",
+            "location": "EbiFurai",
+            "description": "Our game is inspired by the Japanese cartoon, “Sumikko Gurashi”. Targeting Japanese people with an affinity for “corners”, such as the corner seat of a café or the corner of a room, the characters are anthropomorphised animals and food items. The characters are split into 'Sumikko' the main characters, and “Minikko” the smaller side characters. The main character of our game, Ebifurai, the leftover tail of a fried shrimp, refries itself instead of taking baths. The aim of the game is to coat the whole pan with melted butter for Ebifurai to fry itself. The game begins with a slice of butter placed in the middle of the pan, the player will then proceed with the game by tilting the microbit in various directions to coat the pan with the butter within a timeframe of 30 seconds."
+        },
+        "Tamagocchi": {
+            "id": 19,
+            "width": 800,
+            "height": 400,
+            "player": 1,
+            "title": "Tamagocchi (Zephipetri ver)",
+            "designer": ["LIM YU TING, ZEPHANIE", "PETRINA LEOW WAN LENG"],
+            "url": "https://editor.p5js.org/petridished/present/B2jiBNCiR",
+            "location": "Tamagocchi",
+            "description": "Our game concept is inspired by the Japanese Tamagotchi game where players can raise their own virtual pet. With the use of the Microbit connected to a screen, players will be able to navigate through the life of their Tamagotchi pet and take care of it. The Tamagotchi pet’s life will be measured by its hunger and happiness ‘levels’. For example, together with the Tamagotchi, they can play a reaction game, give it food to eat, clean up its poop, off the light to sleep and enjoy music & dance."
+        },
+        "Popcorn": {
+            "id": 20,
+            "width": 800,
+            "height": 400,
+            "player": 1,
+            "title": "Popcorn",
+            "designer": ["GUI XIXIAN", "JIANG WANNI"],
+            "url": "https://editor.p5js.org/t-hweepeng96@hotmail.com/full/DAL5ZUmEP",
+            "location": "Tamagocchi",
+            "description": "Player uses the microbit to move the fire around to burn corns that are moving around randomly. When fire collides with the food objects, it turns them into popcorn, along with sound effects. At the same time, players need to avoid bombs around that will explode and end the game."
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+}

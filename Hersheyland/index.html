@@ -1,0 +1,84 @@
+<!DOCTYPE html><html><head>
+  
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <script src="./microBit.js"></script>
+    <script src="./p5.play.js"></script>
+    <script src="sketch.js"></script>
+   
+    <script>
+
+      function updateMicroBit(mbit,mbit2){
+        microBit = mbit;
+        
+        microBit.setButtonACallback(function() {
+          console.log("buttonA pressed");
+            if (gameScreen == 11) {
+            startGame();
+          }
+          if (gameScreen == 5) {
+            isJumping = 15;
+          }
+          if (gameScreen == 3) {
+            restart();
+            setupSecond();
+          }
+          if (gameScreen == 4) {
+            playGame2();
+          }
+          if (gameScreen == 6) {
+            restart2();
+            setupSecond();
+          }
+          if (gameScreen == 7) {
+            playGame3();
+          }
+          if (gameScreen == 8) {
+            isJumping = 15;
+          }
+
+          if (gameScreen == 9) {
+            restart3();
+            setupThird();
+          }
+          if (gameScreen == 10) {
+            quitGame();
+          }
+          if (gameScreen == 1) {
+            playGame();
+          }
+        });
+
+        microBit.setButtonBCallback(function() {
+          console.log("buttonB pressed");
+          if (gameScreen == 0) {inst();
+          }
+          if (gameScreen == 3) {
+            quitGame();
+            setupSecond();
+          }
+          if (gameScreen == 6) {
+            quitGame();
+            setupSecond();
+          }
+          if (gameScreen == 9) {
+            quitGame();
+            setupThird();
+          }
+          if (gameScreen == 10) {
+            quitGame();
+            setupThird();
+          }
+        });
+      }
+
+    </script>
+  
+
+</body></html>

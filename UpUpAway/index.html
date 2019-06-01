@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="p5.min.js"></script>
+  <script src="p5.dom.min.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+
+  <script src="p5.play.js"></script>
+  <script src="microBit.js"></script>
+
+</head>
+
+<body>
+  <script src="startScene.js"></script>
+  <script src="instructionScene.js"></script>
+  <script src="clearScene.js"></script>
+  <script src="cloudScene.js"></script>
+  <script src="stormScene.js"></script>
+  <script src="congratsScene.js"></script>
+  <script src="gameoverScene.js"></script>
+  <script src="sketch.js"></script>
+
+  <script>
+    function updateMicroBit(mbit) {
+      microBit = mbit;
+      console.log("update microBit")
+      microBit.setButtonACallback(function () {
+        console.log("buttonA pressed");
+        scenes[currentScene].buttonAPressed();
+      });
+
+      microBit.setButtonBCallback(function () {
+        console.log("buttonB pressed");
+        scenes[currentScene].buttonBPressed();
+      });
+
+      microBit.onConnect(function () {
+        console.log("connected");
+      });
+
+      microBit.onDisconnect(function () {
+        console.log("disconnected");
+      });
+    }
+  </script>
+</body>
+
+</html>

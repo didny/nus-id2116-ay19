@@ -1,0 +1,43 @@
+body {
+    /*background-color: black;*/
+
+    background-color: #ecf0f1;
+    color: #34495e;
+    font-family: Trebuchet, Arial, sans-serif;
+    text-align: center;
+
+  }
+  
+  iframe {
+    overflow-y:visible;
+    display:block;
+    margin: 0 auto;
+    background-color: #777;
+  }
+
+  #prevgame {
+    line-height: 16px; 
+    font-size: 14px; 
+    font-weight: bold; 
+    font-family: sans-serif; 
+    /*background-color: brown; 
+    color: gold;*/
+  }
+
+  #nextgame{
+    line-height: 16px; 
+    font-size: 14px; 
+    font-weight: bold; 
+    font-family: sans-serif; 
+    /*color: brown; 
+    background-color: gold;*/
+  }
+
+  .description {
+    margin: auto;
+    text-align: justify;
+    width:500px;
+  }
+
+
+

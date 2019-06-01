@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="p5.min.js"></script>
+  <script src="p5.dom.min.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+
+  <script src="p5.play.js"></script>
+  <script src="microBit.js"></script>
+
+</head>
+
+<body>
+
+  <script src="TitleScene.js"></script>
+  <script src="GudeScene.js"></script>
+  <script src="ResultScene.js"></script>
+  <script src="sketch.js"></script>
+
+  <script>
+    function updateMicroBit(mbit,mbit2) {
+      microBit = mbit;
+      console.log("update microBit")
+      microBit.setButtonACallback(function () {
+        console.log("buttonA pressed");
+        scenes[currentScene].buttonAPressed();
+      });
+
+      microBit.setButtonBCallback(function () {
+        console.log("buttonB pressed");
+        scenes[currentScene].buttonBPressed();
+      });
+
+      microBit.onConnect(function () {
+        console.log("connected");
+        timerID = setTimeout(
+          () => {
+            egg.visible = false;
+            shake.visible = true;
+          },
+          3 * 1000);
+
+        timerID = setTimeout(
+          () => {
+            shake.visible = false;
+            hatchIsVisible = true;
+          },
+          6 * 1000);
+
+        timerID = setTimeout(
+          () => {
+            hatchIsVisible = false;
+            baby.visible = true;
+            const intervalId = setInterval(() => {
+              poop.visible = true;
+              //clearInterval(intervalId);
+            }, 80 * 1000);
+          },
+          8 * 1000);
+
+        timerID = setTimeout(
+          () => {
+            baby.visible = false;
+            evo.visible = true;
+            scenes[currentScene].buttonAPressed();
+            currentScene = "health";
+            tamaVisible = true;
+          },
+          78 * 1000);
+
+        timerID = setTimeout(
+          () => {
+            evo.visible = false;
+            adult.visible = true;
+          },
+          82 * 1000);
+
+        timerID = setTimeout(
+          () => {
+            adult.visible = false;
+            spirit.visible = true;
+            scenes[currentScene].buttonAPressed();
+            currentScene = "health";
+            tamaVisible = true;
+          }, 212 * 1000);
+
+        tamaVisible = true;
+
+      });
+
+      microBit.onDisconnect(function () {
+        console.log("disconnected");
+      });
+    }
+  </script>
+</body>
+
+</html>
