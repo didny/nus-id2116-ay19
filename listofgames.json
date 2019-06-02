@@ -48,8 +48,8 @@
         },
         "Germ Buster": {
             "id": 3,
-            "width": 900,
-            "height": 500,
+            "width": 960,
+            "height": 540,
             "player": 1,
             "title": "Germ Buster",
             "designer": ["JOEL LOO CHOON KIAT", "ANDY TANG WENG CHEN"],
@@ -59,8 +59,8 @@
         },
         "Going Home": {
             "id": 4,
-            "width": 900,
-            "height": 500,
+            "width": 800,
+            "height": 450,
             "player": 1,
             "title": "Going Home",
             "designer": ["TAN YAN JING MELISSA", "NURUL SYAZWANI BTE SHAPUAN"],
@@ -70,8 +70,8 @@
         },
         "SAIRE": {
             "id": 5,
-            "width": 900,
-            "height": 500,
+            "width": 600,
+            "height": 400,
             "player": 1,
             "title": "SAIRE",
             "designer": ["LIM JING JIE", "BOH ERN CHI JERALDINE"],
@@ -117,8 +117,8 @@
 
         "Blob": {
             "id": 11,
-            "width": 1920,
-            "height": 1080,
+            "width": 960,
+            "height": 540,
             "player": 1,
             "title": "Blob",
             "designer": ["CARINA LIM YU SHAN", "TAN SHIN CHIEH JEREME"],
@@ -129,8 +129,8 @@
 
         "浇水": {
             "id": 12,
-            "width": 1920,
-            "height": 1080,
+            "width": 960,
+            "height": 540,
             "player": 1,
             "title": "浇水",
             "designer": ["FELICIA LEE JIA XIN", "JANNA TAN JIE NING"],
@@ -152,8 +152,8 @@
         },
         "Wormies": {
             "id": 14,
-            "width": 2080,
-            "height": 500,
+            "width": 800,
+            "height": 320,
             "player": 1,
             "title": "Wormies",
             "designer": ["CHOOI AN RONG AARON", "LEE JIE XUAN, KEITH"],
@@ -174,8 +174,8 @@
         },
         "Color Boink": {
             "id": 16,
-            "width": 1920,
-            "height": 1080,
+            "width": 960,
+            "height": 540,
             "player": 1,
             "title": "Color Boink",
             "designer": ["GRACIA FEI YUE", "JONJOE FONG JUN MING"],
@@ -207,8 +207,8 @@
         },
         "Tamagocchi": {
             "id": 19,
-            "width": 800,
-            "height": 400,
+            "width": 750,
+            "height": 500,
             "player": 1,
             "title": "Tamagocchi (Zephipetri ver)",
             "designer": ["LIM YU TING, ZEPHANIE", "PETRINA LEOW WAN LENG"],
@@ -219,12 +219,12 @@
         "Popcorn": {
             "id": 20,
             "width": 800,
-            "height": 400,
+            "height": 500,
             "player": 1,
             "title": "Popcorn",
             "designer": ["GUI XIXIAN", "JIANG WANNI"],
             "url": "https://editor.p5js.org/t-hweepeng96@hotmail.com/full/DAL5ZUmEP",
-            "location": "Tamagocchi",
+            "location": "Popcorn",
             "description": "Player uses the microbit to move the fire around to burn corns that are moving around randomly. When fire collides with the food objects, it turns them into popcorn, along with sound effects. At the same time, players need to avoid bombs around that will explode and end the game."
         }
 

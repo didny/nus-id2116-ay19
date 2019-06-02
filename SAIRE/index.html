@@ -18,5 +18,28 @@
     <script src="pauseScene.js"></script>
     <script src="sketch.js"></script>
   
+    <script>
 
+      function updateMicroBit(mbit,mbit2) {
+        microBit = mbit;
+        console.log("update microBit")
+        microBit.setButtonACallback(function () {
+          console.log("buttonA pressed");
+          scenes[currentScene].buttonAPressed();
+        });
+  
+        microBit.setButtonBCallback(function () {
+          console.log("buttonB pressed");
+          scenes[currentScene].buttonBPressed();
+        });
+  
+        microBit.onConnect(function () {
+          console.log("connected");
+        });
+  
+        microBit.onDisconnect(function () {
+          console.log("disconnected");
+        });
+      }
+    </script>
 </body></html>

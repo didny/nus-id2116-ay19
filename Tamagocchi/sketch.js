@@ -514,6 +514,8 @@ function searchDevice(){
 	microBit.searchDevice();
 }
 
+windowWidth = 1500;
+windowHeight = 1000;
 
 //The triggering of the code
 function setup() {
