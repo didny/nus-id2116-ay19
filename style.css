@@ -33,7 +33,7 @@ body {
     background-color: gold;*/
   }
 
-  .description {
+  #description {
     margin: auto;
     text-align: justify;
     width:500px;
