@@ -1,9 +1,21 @@
 let count = 0;
 let microBit;
 let microBit2;
+
+
+function blockContextMenu(){
+  window.oncontextmenu = function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    return false;
+  };
+}
+
+
 function setup() {
   createCanvas(400, 400);
 
+  //blockContextMenu();
 
   microBit=new uBit();
   microBit2=new uBit();
@@ -51,16 +63,16 @@ function draw() {
   background(220);
   textSize(25);
   textAlign(CENTER)
-  angleX = map(-microBit.getAccelerometer().x,-1024,1024,0,360);
-  angleY = map(-microBit.getAccelerometer().y,-1024,1024,0,360);
+  angleX = map(microBit.getAccelerometer().x,-1024,1024,0,360);
+  angleY = map(microBit.getAccelerometer().y,-1024,1024,0,360);
   
   
   text("mb1:connected:"+microBit.connected,width/2,height/2-50);
   text("X:"+angleX,width/2,height/2-25);
   text("Y:"+angleY,width/2,height/2);
   text("mb2:connected:"+microBit2.connected,width/2,height/2+25);
-  angleX = map(-microBit2.getAccelerometer().x,-1024,1024,0,360);
-  angleY = map(-microBit2.getAccelerometer().y,-1024,1024,0,360);
+  angleX = map(microBit2.getAccelerometer().x,-1024,1024,0,360);
+  angleY = map(microBit2.getAccelerometer().y,-1024,1024,0,360);
 
   text("X:"+angleX,width/2,height/2+50);
   text("Y:"+angleY,width/2,height/2+75);
@@ -104,8 +116,28 @@ function searchDevice(){
 function searchDevice2(){
   microBit2.searchDevice();
 }
+
 function mousePressed(){
-  searchDevice();
+  if(microBit != null){
+  if (mouseButton === LEFT) {
+    if(microBit.connected == false) microBit.onButtonA(); 
+  }
+  if (mouseButton === RIGHT) {
+    if(microBit.connected == false) microBit.onButtonB(); 
+  }
+  }
+}
+
+
+function mouseMoved() {
   
+  if(microBit != null){
+    print(mouseX + "," + mouseY + "(" + width + "," + height + ")");
+    microBit.accelerometer.x = map(mouseX,0,width,0,2048) - 1024;
+    microBit.accelerometer.y = map(mouseY,0,height,0,2048) - 1024;
+    
+    
+  }
+
 
 }
