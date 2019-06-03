@@ -314,11 +314,11 @@ if (microBit.connected) {
     text("Accelerometer Y=" + accY, 10, 60);
     text("Accelerometer Z=" + accZ, 10, 80);
 
-    if (accX < 100) {
+    if (accX < 0) {
     girl.rotation -= 1/2 ;
     girl.setSpeed(2, girl.rotation);
    }
-    else if (accX < 1000) {
+    else if (accX >= 0) {
     girl.rotation +=1/2 ;
     girl.setSpeed(2, girl.rotation);
    }
