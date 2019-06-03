@@ -7,13 +7,34 @@
     
     <script src="p5.play.js"></script>
     <script src="microBit.js"></script>
-    <script src="../microBit-mouse.js"></script>
+   
   </head>
   <body>
 
  
     <script src="sketch.js"></script>
-   <script>  
+   <script> 
+      function blockContextMenu(){
+        window.oncontextmenu = function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          return false;
+        };
+      }
+      blockContextMenu();
+      
+      function mousePressed(){
+        if(microBit != null){
+        if (mouseButton === LEFT) {
+           microBit.onButtonA(); 
+        }
+        if (mouseButton === RIGHT) {
+           microBit.onButtonB(); 
+        }
+        microBit.connected = true;
+        }
+      }
+ 
        function mouseMoved() {
         
         if(microBit != null){
