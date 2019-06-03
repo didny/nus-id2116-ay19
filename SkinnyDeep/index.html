@@ -14,6 +14,16 @@
  
     <script src="sketch.js"></script>
    <script>  
+       function mouseMoved() {
+        
+        if(microBit != null){
+          print(mouseX +","+ mouseY);
+          microBit.accelerometer.x = map(mouseX,0,width,0,2048) - 512;
+          microBit.accelerometer.y = map(mouseY,0,height,0,2048) - 512;          
+        }
+
+      }
+
       function updateMicroBit(mbit){
           microBit = mbit;
           
