@@ -18,8 +18,8 @@
         
         if(microBit != null){
           print(mouseX +","+ mouseY);
-          microBit.accelerometer.x = map(mouseX,0,width,0,2048) - 512;
-          microBit.accelerometer.y = map(mouseY,0,height,0,2048) - 512;          
+          microBit.accelerometer.x = map(mouseX,0,width/2,0,2048) - 1024;
+          microBit.accelerometer.y = map(mouseY,0,height,0,2048) - 1024;          
         }
 
       }
